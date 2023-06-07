@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #9B9BE1;
+    /* font-family: "roboto"; */
+}
+
+
+/* Styles */
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.message {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-icon {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.img-icon img {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background: none;
+    margin-bottom: 25px;
+    filter: drop-shadow(-2px 2px 4px rgba(0, 0, 0, 0.7));
+}
+
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+    {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 4s linear infinite;
+    -moz-animation: rotating 4s linear infinite;
+    -ms-animation: rotating 4s linear infinite;
+    -o-animation: rotating 4s linear infinite;
+    animation: rotating 4s linear infinite;
+}
+
+@media (max-width: 676px) {
+    .title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title h1 {
+        color: #38388E;
+        font-size: 2.2rem;
+        font-family: "roboto black";
+    }
+
+    .title h2 {
+        color: #3F3F5C;
+        font-size: 1.2rem;
+        max-width: 335px;
+        font-family: "roboto";
+    }
+}
+
+@media (min-width: 676px) {
+
+    .title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title h1 {
+        color: #38388E;
+        font-size: 2.8rem;
+        font-family: "roboto black";
+    }
+
+    .title h2 {
+        color: #3F3F5C;
+        font-size: 1.4rem;
+        max-width: 410px;
+        font-family: "roboto";
+    }
+}
